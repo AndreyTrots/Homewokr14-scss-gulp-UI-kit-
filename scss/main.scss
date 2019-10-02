@@ -1,0 +1,30 @@
+$column-bg: #ff0;
+@mixin clearfix{
+	&:after{
+		content:'';
+		clear: both;
+		display: block;
+	}
+}
+
+body{
+	background: url(../../images/bg.png) no-repeat;
+}
+
+.container{
+	background: $column-bg;
+	width: 900px;
+	margin: auto;
+	padding-bottom: 20px;
+	@include clearfix;
+	.col{
+		background: $column-bg;
+		width: 900px;
+		float: left;
+	}
+	p {
+		font-size: 40px;
+		color: green;
+	}
+}
+

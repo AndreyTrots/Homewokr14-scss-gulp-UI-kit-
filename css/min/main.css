@@ -1,0 +1,1 @@
+body{background:url(../../images/bg.png) no-repeat}.container{background:#ff0;width:900px;margin:auto;padding-bottom:20px}.container:after{content:'';clear:both;display:block}.container .col{background:#ff0;width:900px;float:left}.container p{font-size:40px;color:green}
