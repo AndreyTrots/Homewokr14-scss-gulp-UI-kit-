@@ -6,7 +6,9 @@ $column-bg: #ff0;
 		display: block;
 	}
 }
-
+*{
+	box-sizing: border-box;
+}
 body{
 	background: url(../../images/bg.png) no-repeat;
 }
@@ -27,4 +29,131 @@ body{
 		color: green;
 	}
 }
+
+$color-white: #fff;
+@mixin colorheader {
+		color: $color-white;
+}
+
+
+
+
+
+
+
+
+
+
+.login-container {
+	width: 300px;
+	height: 388px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	  .login-header {
+	  	@include colorheader;
+	  	width: 300px;
+	  	height: 60px;
+	  	background: #515a9f;
+	  	text-align: center;
+	  	font: 20px 'proxima_novabold', sans-serif;
+	  	padding-top: 23px;
+	  	
+	  	border-top-right-radius: 7px;
+	  	border-top-left-radius: 7px;
+	  	border-bottom: 1px solid #433979;
+	  }
+	  label {
+       display: block;
+       font: 16px 'proxima_novaregular', sans-serif;
+       padding-bottom: 8px;
+       @include colorheader;
+
+	   }
+}
+
+.login-container form {
+	padding: 30px 23px 0px 23px;
+	margin-bottom: 25px;
+	border: 1px solid #875998;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+		span{
+			display: block;
+			float: left;
+			font: 14px 'skolar_cyrillicregular', sans-serif;
+			@include colorheader;
+		}
+		.input-block input{
+			width: 250px;
+			height: 60px;
+			margin-bottom: 17px;
+			border-radius: 7px;
+			padding-left: 10px;
+			background: rgba(255, 255, 255, 0.2);
+			border: none;
+		}
+		input::placeholder {
+			@include colorheader;
+		}
+		.input-block input:active {
+			background: #fff;
+		}
+		.input-block input:focus {
+			background: rgba(255, 255, 255, 0.8);
+		}
+}
+	.line-one {
+		border-bottom: 2px solid #c7accb;
+		width: 106px;
+		float: left;
+		margin-top: 7px;
+		margin-right: 12px;
+		opacity: 0.7;
+	}
+	.line-two {
+		border-bottom: 2px solid #c7accb;
+		width: 106px;
+		float: right;
+		margin-top: 7px;
+		opacity: 0.7;
+	}
+
+.login-footer {
+	  	@include colorheader;
+	  	width: 300px;
+	  	height: 60px;
+	  	background: rgba(255, 255, 255, 0.6);
+	  	text-align: center;
+	  	font-family: 'Proxima Nova Rg';
+	  	padding-top: 13px;
+	  	font-size: 20px;
+	  	border-bottom-right-radius: 7px;
+	  	border-bottom-left-radius: 7px;
+	  	margin-left: -24px;
+   		margin-top: 30px;
+	 }
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+.twitter {
+	background: url('../../images/icon-sprite.png') no-repeat -15px -13px;
+	width: 32px;
+	height: 32px;
+	
+}
+.google {
+	background: url(../../images/icon-sprite.png) no-repeat -60px -13px;
+	width: 32px;
+	height: 32px;
+}
+.facebook {
+	background: url('../../images/icon-sprite.png') no-repeat -108px -13px;
+	width: 32px;
+	height: 32px;
+}
+}
+
+
 
