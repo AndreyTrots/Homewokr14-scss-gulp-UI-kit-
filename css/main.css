@@ -25,15 +25,15 @@ body {
   width: 300px;
   height: 388px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 20px; }
   .login-container .login-header {
     color: #fff;
-    width: 300px;
-    height: 60px;
     background: #515a9f;
     text-align: center;
     font: 20px 'proxima_novabold', sans-serif;
     padding-top: 23px;
+    padding-bottom: 20px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
     border-bottom: 1px solid #433979; }
@@ -44,22 +44,16 @@ body {
     color: #fff; }
 
 .login-container form {
-  padding: 30px 23px 0px 23px;
-  margin-bottom: 25px;
-  border: 1px solid #875998;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px; }
+  padding: 30px 23px 8px 23px;
+  border: 1px solid #875998; }
   .login-container form span {
-    display: block;
-    float: left;
     font: 14px 'skolar_cyrillicregular', sans-serif;
     color: #fff; }
   .login-container form .input-block input {
-    width: 250px;
-    height: 60px;
+    width: 100%;
     margin-bottom: 17px;
     border-radius: 7px;
-    padding-left: 10px;
+    padding: 20px 0 20px 10px;
     background: rgba(255, 255, 255, 0.2);
     border: none; }
   .login-container form input::placeholder {
@@ -70,33 +64,31 @@ body {
     background: rgba(255, 255, 255, 0.8); }
 
 .line-one {
+  widows: 100%;
   border-bottom: 2px solid #c7accb;
-  width: 106px;
   float: left;
   margin-top: 7px;
   margin-right: 12px;
-  opacity: 0.7; }
+  opacity: 0.7;
+  padding: 0 53px 0 53px; }
 
 .line-two {
   border-bottom: 2px solid #c7accb;
-  width: 106px;
+  padding: 0 53px 0 53px;
   float: right;
   margin-top: 7px;
   opacity: 0.7; }
 
 .login-footer {
   color: #fff;
-  width: 300px;
+  width: 100%;
   height: 60px;
   background: rgba(255, 255, 255, 0.6);
-  text-align: center;
   font-family: 'Proxima Nova Rg';
-  padding-top: 13px;
+  padding: 13px 60px 13px 60px;
   font-size: 20px;
   border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  margin-left: -24px;
-  margin-top: 30px; }
+  border-bottom-left-radius: 7px; }
 
 .social {
   display: flex;
@@ -114,3 +106,34 @@ body {
     background: url("../../images/icon-sprite.png") no-repeat -108px -13px;
     width: 32px;
     height: 32px; }
+
+.profile-container {
+  width: 300px;
+  height: 388px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px; }
+  .profile-container .profile-header {
+    color: #fff;
+    background: #b77b5a;
+    text-align: center;
+    font: 20px 'proxima_novabold', sans-serif;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom: 1px solid #6b528a; }
+
+.profile-info {
+  background: url(../../images/bg-profile-info.png) no-repeat;
+  padding: 30px 50px 30px 20px;
+  width: 100%; }
+  .profile-info span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    margin-right: 15px; }
+  .profile-info span img {
+    border-radius: 50%;
+    width: 100%; }
