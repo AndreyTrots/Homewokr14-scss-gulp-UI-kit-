@@ -137,3 +137,6 @@ body {
   .profile-info span img {
     border-radius: 50%;
     width: 100%; }
+  .profile-info p {
+    display: block;
+    color: #fff; }
