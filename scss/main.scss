@@ -1,12 +1,4 @@
 @import 'include-media.scss';
-$column-bg: #ff0;
-@mixin clearfix{
-	&:after{
-		content:'';
-		clear: both;
-		display: block;
-	}
-}
 *{
 	box-sizing: border-box;
 }
@@ -14,29 +6,14 @@ body{
 	background: url(../../images/bg.png) no-repeat;
 }
 
-.container{
-	background: $column-bg;
-	width: 900px;
-	margin: auto;
-	padding-bottom: 20px;
-	@include clearfix;
-	.col{
-		background: $column-bg;
-		width: 900px;
-		float: left;
-	}
-	p {
-		font-size: 40px;
-		color: green;
-	}
-}
-
-
-
-
 $color-white: #fff;
 @mixin colorheader {
 		color: $color-white;
+}
+.flex {
+	display: flex;
+ 	flex-flow: row wrap;
+ 	justify-content: flex-start;
 }
 .first-block {
 	float: left;
@@ -117,7 +94,6 @@ $color-white: #fff;
 	  	font-size: 20px;
 	  	border-bottom-right-radius: 7px;
 	  	border-bottom-left-radius: 7px;
-   		
 	 }
 .social {
 	display: flex;
@@ -172,17 +148,13 @@ $color-white: #fff;
 			border-radius: 50%;
 			border: 4px solid rgba(255, 255, 255, 0.2);
 			margin-right: 15px;
-			
-			
 		}
 	}
 	.profile-data {
 		position: relative;
-
 		span img {
 			border-radius: 50%;
 			width: 100%;
-
 		}
 		p {
 		display: block;	
@@ -200,15 +172,15 @@ $color-white: #fff;
 		top: 45px;
 		margin-left: 100px;
 		font-size: 16px;
-}
-em {
-	display: block;	
+		}
+		em {
+		display: block;	
 		position: absolute;
 		top: 42px;
 		padding-left: 115px;
 		@include colorheader;
 		font: 16px 'proxima_novaregular', sans-serif;
-}
+		}
 }
 
 .stats {
@@ -216,24 +188,23 @@ em {
 	overflow: hidden;
 	margin-top: 25px;
 	margin-bottom: 30px;
-
  .following {
 	float: left;
 	border-right: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 12px 48px 0 31px;
 	font: 16px 'proxima_novaregular', sans-serif;
 	@include colorheader;
- }
+  }
  span {
 	display: block;
 	font-size: 30px;
- }
+  }
  .fllowers {
  	padding: 12px 48px 0 31px;
  	float: left;
  	font: 16px 'proxima_novaregular', sans-serif;
 	@include colorheader;
- }
+  }
 }
 
 
@@ -251,16 +222,9 @@ em {
 	display: inline-block;
 	border-radius: 10px;
 	text-decoration: none;
-	
-
 }
 .btn1 {
 	@include but(rgba(255, 255, 255, 0.2), white);
-}
-
-.two-block {
-	float: left;
-	
 }
 
 .download-container {
@@ -269,7 +233,6 @@ em {
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
 	margin-bottom: 20px;
-
 		.download-header {
 		  	@include colorheader;	
 		  	background: #6c8f7d;
@@ -302,16 +265,13 @@ em {
 			margin: 0;
 			@include colorheader;	
 			}	
-
 }
 	
-	.location-container {
+.location-container {
 	width: 300px;
-	
 	background: rgba(255, 255, 255, 0.2);
 	border-radius: 10px;
 	margin-bottom: 20px;
-
 		.location-header {
 		  	@include colorheader;	
 		  	background: #9b8b65;
@@ -324,30 +284,28 @@ em {
 		  	border-bottom: 1px solid #36306b;
 	  }
 	}
-	.location-inner {
-		display: flex;
-		width: 100%;
-		padding: 2px;
-		border: 1px solid #684474;
-			border-bottom-right-radius: 7px;
-		 border-bottom-left-radius: 7px;
-	
-   .location-city {
+.location-inner {
+	display: flex;
+	width: 100%;
+	padding: 2px;
+	border: 1px solid #684474;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	  .location-city {
    	height: 75px;
    	flex-grow: 2;
    	border-right: 1px solid rgba(255, 255, 255, 0.2);
    	position: relative;
    	 }
    	span {
-				background: url('../../images/icon-sprite.png') no-repeat -20px -56px;
-				width: 19px;
-				height: 24px;
-				display: block;
-				position: absolute;
-				top: 25px;
-				left: 25px;
-
-	}
+			background: url('../../images/icon-sprite.png') no-repeat -20px -56px;
+			width: 19px;
+			height: 24px;
+			display: block;
+			position: absolute;
+			top: 25px;
+			left: 25px;
+			}
    p {
    position: absolute;
    top: 13px;
@@ -358,15 +316,28 @@ em {
    .bullet {
    	flex-grow: 1;
    	}
-				em{
-				background: url('../../images/icon-sprite.png') no-repeat -18px -88px;
-				width: 24px;
-				height: 24px;
-				position: relative;
-				display: block;
-	margin: auto;
-	margin-top: 22px;
-					}
-			
+		em{
+			background: url('../../images/icon-sprite.png') no-repeat -18px -88px;
+			width: 24px;
+			height: 24px;
+			position: relative;
+			display: block;
+			margin: auto;
+			margin-top: 22px;
+			}
 	}
+.btn2 {
+	@include but(rgba(255, 255, 255, 0.2), white);
+}
+.btn3 {
+	@include but(#32487f, white);
+}
+.btn4 {
+	@include but(#416e8d, white);
+}
+.btn5 {
+	@include but(#3a6f4e, white);
+}
+
+
 	

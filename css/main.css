@@ -4,22 +4,10 @@
 body {
   background: url(../../images/bg.png) no-repeat; }
 
-.container {
-  background: #ff0;
-  width: 900px;
-  margin: auto;
-  padding-bottom: 20px; }
-  .container:after {
-    content: '';
-    clear: both;
-    display: block; }
-  .container .col {
-    background: #ff0;
-    width: 900px;
-    float: left; }
-  .container p {
-    font-size: 40px;
-    color: green; }
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start; }
 
 .first-block {
   float: left;
@@ -200,9 +188,6 @@ body {
   border-radius: 10px;
   text-decoration: none; }
 
-.two-block {
-  float: left; }
-
 .download-container {
   width: 300px;
   height: 390px;
@@ -290,3 +275,39 @@ body {
     display: block;
     margin: auto;
     margin-top: 22px; }
+
+.btn2 {
+  font: 20px 'proxima_novabold', sans-serif;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 13px 89px 13px 86px;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none; }
+
+.btn3 {
+  font: 20px 'proxima_novabold', sans-serif;
+  color: white;
+  background: #32487f;
+  padding: 13px 89px 13px 86px;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none; }
+
+.btn4 {
+  font: 20px 'proxima_novabold', sans-serif;
+  color: white;
+  background: #416e8d;
+  padding: 13px 89px 13px 86px;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none; }
+
+.btn5 {
+  font: 20px 'proxima_novabold', sans-serif;
+  color: white;
+  background: #3a6f4e;
+  padding: 13px 89px 13px 86px;
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none; }
